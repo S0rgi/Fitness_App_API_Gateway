@@ -1,0 +1,62 @@
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Publish output
+publish/
+
+# Rider
+.idea/
+
+# ASP.NET Core / .NET
+*.db
+*.bak
+*.log
+*.vspscc
+
+# User-specific files
+*.userprefs
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NuGet packages
+*.nupkg
+# NuGet symbol packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+
+# Docker
+**/Dockerfile.*
+**/docker-compose*.yml
+docker-compose.override.yml
+
+# Environment variables file
+.env
+*.env
+
+# Data Protection keys
+**/DataProtection-Keys/
+
+# ASP.NET temporary files
+App_Data/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Others
+*.dbmdl
+*.dbproj.schemaview
