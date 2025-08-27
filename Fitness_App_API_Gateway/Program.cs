@@ -40,7 +40,7 @@ app.Use(async (context, next) =>
             var pathSegs = context.Request.Path.Value.Split('/', StringSplitOptions.RemoveEmptyEntries);
             var prefix = pathSegs.Length > 0 ? "/" + pathSegs[0] : "";
 
-            var scheme = context.Request.Scheme;
+            var scheme = context.Request.Headers["X-Forwarded-Proto"].FirstOrDefault() ?? context.Request.Scheme;
             var host = context.Request.Host.Value;
             var serverUrl = $"{scheme}://{host}{prefix}";
 
